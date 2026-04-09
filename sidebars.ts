@@ -1,7 +1,7 @@
 import type { SidebarsConfig } from '@docusaurus/plugin-content-docs'
 
 export default {
-  docs: [
+  docusaurusSidebar: [
     {
       label: 'Docusaurus 主题魔改',
       type: 'category',
@@ -17,6 +17,19 @@ export default {
         'docusaurus/docusaurus-search',
         'docusaurus/docusaurus-comment',
         'docusaurus/docusaurus-deploy',
+      ],
+    },
+  ],
+  javaSidebar: [
+    {
+      label: 'Java 基础',
+      type: 'category',
+      link: {
+        type: 'doc',
+        id: 'java/java',
+      },
+      items: [
+        'java/jdk-setup',
       ],
     },
   ],

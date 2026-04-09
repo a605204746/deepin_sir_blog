@@ -8,7 +8,7 @@ const beian = '闽ICP备2020017848号-3'
 const beian1 = '闽公网安备35021102000847号'
 
 const config: Config = {
-  title: '愧怍',
+  title: '深度先生',
   url: 'https://kuizuo.me',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
@@ -16,7 +16,7 @@ const config: Config = {
   projectName: 'blog',
   customFields: {
     bio: 'born to differ.', // die to survive.
-    description: '是一个由愧怍创建的个人博客，主要分享编程开发知识和项目，该网站基于 React 驱动的静态网站生成器 Docusaurus 构建。',
+    description: '是一个由深度先生创建的个人博客，主要分享编程开发知识和项目，该网站基于 React 驱动的静态网站生成器 Docusaurus 构建。',
   },
   themeConfig: {
     // announcementBar: {
@@ -27,7 +27,7 @@ const config: Config = {
     metadata: [
       {
         name: 'author',
-        content: '愧怍',
+        content: '深度先生',
       },
       {
         name: 'keywords',
@@ -40,24 +40,46 @@ const config: Config = {
     ],
     navbar: {
       logo: {
-        alt: '愧怍',
+        alt: '深度先生',
         src: 'img/logo.webp',
         srcDark: 'img/logo.webp',
       },
       hideOnScroll: true,
       items: [
-        { label: '博客', position: 'right', to: 'blog' },
-        { label: '项目', position: 'right', to: 'project' },
-        { label: '友链', position: 'right', to: 'friends' },
-        { label: '关于', position: 'right', to: 'about' },
+        { label: '首页', position: 'left', to: '/', activeBaseRegex: '^/$' },
         {
-          label: '更多',
-          position: 'right',
+          label: 'Java',
+          position: 'left',
           items: [
-            { label: '归档', to: 'blog/archive' },
-            { label: '主题魔改', to: 'docs/docusaurus-guides' },
+            { label: 'Java基础', to: 'docs/java' },
+            { label: 'JVM', to: 'docs/jvm' },
           ],
         },
+        {
+          label: 'Spring',
+          position: 'left',
+          items: [
+            { label: 'Spring框架', to: 'docs/spring' },
+            { label: 'SpringBoot', to: 'docs/springboot' },
+            { label: 'SpringCloud', to: 'docs/springcloud' },
+            { label: 'Spring Alibaba', to: 'docs/spring-alibaba' },
+          ],
+        },
+        { label: 'AI技术', position: 'left', to: 'docs/ai' },
+        {
+          label: '中间件',
+          position: 'left',
+          items: [
+            { label: 'Kafka', to: 'docs/kafka' },
+            { label: 'Redis', to: 'docs/redis' },
+            { label: 'Nginx', to: 'docs/nginx' },
+            { label: 'RocketMQ', to: 'docs/rocketmq' },
+          ],
+        },
+        { label: '项目', position: 'left', to: 'project' },
+        { label: '友链', position: 'left', to: 'friends' },
+        { label: '关于', position: 'left', to: 'about' },
+        { label: '主题魔改', position: 'left', to: 'docs/docusaurus-guides' },
         // {
         //   type: 'localeDropdown',
         //   position: 'right',
@@ -70,8 +92,6 @@ const config: Config = {
         {
           title: '学习',
           items: [
-            { label: '博客', to: 'blog' },
-            { label: '归档', to: 'blog/archive' },
             { label: '实战项目', to: 'project' },
           ],
         },
@@ -223,9 +243,9 @@ const config: Config = {
           defaultReadingTime({ content, options: { wordsPerMinute: 300 } }),
         feedOptions: {
           type: 'all',
-          title: '愧怍',
+          title: '深度先生',
           description: 'feedId:41215011978385457+userId:41840354283324416',
-          copyright: `Copyright © ${new Date().getFullYear()} 愧怍 Built with Docusaurus.<p><a href="http://beian.miit.gov.cn/" class="footer_lin">${beian}</a></p>`,
+          copyright: `Copyright © ${new Date().getFullYear()} 深度先生 Built with Docusaurus.<p><a href="http://beian.miit.gov.cn/" class="footer_lin">${beian}</a></p>`,
         },
       },
     ],
@@ -279,7 +299,7 @@ Love what you do and do what you love.
       tagName: 'meta',
       attributes: {
         name: 'description',
-        content: '愧怍的个人博客',
+        content: '深度先生的个人博客',
       },
     },
   ],
