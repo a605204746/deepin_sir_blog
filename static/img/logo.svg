@@ -1,0 +1,90 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a5f"/>
+      <stop offset="100%" stop-color="#0d1f3c"/>
+    </linearGradient>
+    <linearGradient id="faceGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fde8c8"/>
+      <stop offset="100%" stop-color="#f5c89a"/>
+    </linearGradient>
+    <linearGradient id="hatGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#12affa"/>
+      <stop offset="100%" stop-color="#0066cc"/>
+    </linearGradient>
+    <clipPath id="circleClip">
+      <circle cx="50" cy="50" r="48"/>
+    </clipPath>
+  </defs>
+
+  <!-- 背景圆 -->
+  <circle cx="50" cy="50" r="50" fill="url(#bgGrad)"/>
+
+  <!-- 身体/西装 -->
+  <ellipse cx="50" cy="90" rx="28" ry="18" fill="#1a2744" clip-path="url(#circleClip)"/>
+  <!-- 衬衫领子 -->
+  <polygon points="44,74 50,80 56,74 54,68 46,68" fill="white" clip-path="url(#circleClip)"/>
+  <!-- 领带 -->
+  <polygon points="48,72 52,72 51,84 50,86 49,84" fill="#12affa" clip-path="url(#circleClip)"/>
+
+  <!-- 脖子 -->
+  <rect x="44" y="64" width="12" height="10" rx="4" fill="#fde8c8" clip-path="url(#circleClip)"/>
+
+  <!-- 脸 -->
+  <ellipse cx="50" cy="50" rx="22" ry="20" fill="url(#faceGrad)"/>
+
+  <!-- 头发 -->
+  <ellipse cx="50" cy="33" rx="22" ry="12" fill="#2d1a0e"/>
+  <ellipse cx="50" cy="30" rx="18" ry="8" fill="#3d2410"/>
+  <!-- 刘海 -->
+  <ellipse cx="38" cy="36" rx="8" ry="5" fill="#2d1a0e"/>
+  <ellipse cx="62" cy="36" rx="8" ry="5" fill="#2d1a0e"/>
+
+  <!-- 耳朵 -->
+  <ellipse cx="28" cy="51" rx="4" ry="5" fill="#f5c89a"/>
+  <ellipse cx="72" cy="51" rx="4" ry="5" fill="#f5c89a"/>
+  <ellipse cx="28" cy="51" rx="2.5" ry="3.5" fill="#e8a87c"/>
+  <ellipse cx="72" cy="51" rx="2.5" ry="3.5" fill="#e8a87c"/>
+
+  <!-- 眼镜框 -->
+  <rect x="33" y="45" width="14" height="11" rx="5" fill="none" stroke="#2d1a0e" stroke-width="1.8"/>
+  <rect x="53" y="45" width="14" height="11" rx="5" fill="none" stroke="#2d1a0e" stroke-width="1.8"/>
+  <!-- 眼镜鼻梁 -->
+  <line x1="47" y1="50" x2="53" y2="50" stroke="#2d1a0e" stroke-width="1.5"/>
+  <!-- 眼镜腿 -->
+  <line x1="28" y1="50" x2="33" y2="50" stroke="#2d1a0e" stroke-width="1.5"/>
+  <line x1="67" y1="50" x2="72" y2="50" stroke="#2d1a0e" stroke-width="1.5"/>
+
+  <!-- 眼睛（大圆萌眼） -->
+  <circle cx="40" cy="51" r="4" fill="#1a0e00"/>
+  <circle cx="60" cy="51" r="4" fill="#1a0e00"/>
+  <!-- 眼睛高光 -->
+  <circle cx="42" cy="49" r="1.2" fill="white"/>
+  <circle cx="62" cy="49" r="1.2" fill="white"/>
+  <!-- 小光点 -->
+  <circle cx="38.5" cy="52.5" r="0.6" fill="white" opacity="0.6"/>
+  <circle cx="58.5" cy="52.5" r="0.6" fill="white" opacity="0.6"/>
+
+  <!-- 眉毛 -->
+  <path d="M 34 43.5 Q 40 41 46 43.5" stroke="#2d1a0e" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M 54 43.5 Q 60 41 66 43.5" stroke="#2d1a0e" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+
+  <!-- 鼻子 -->
+  <ellipse cx="50" cy="56" rx="2" ry="1.5" fill="#e0a070" opacity="0.6"/>
+
+  <!-- 嘴巴（微笑） -->
+  <path d="M 43 61 Q 50 66 57 61" stroke="#c47a4a" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+
+  <!-- 腮红 -->
+  <ellipse cx="34" cy="58" rx="5" ry="3" fill="#ff9999" opacity="0.35"/>
+  <ellipse cx="66" cy="58" rx="5" ry="3" fill="#ff9999" opacity="0.35"/>
+
+  <!-- 博士帽 -->
+  <rect x="33" y="26" width="34" height="6" rx="1" fill="url(#hatGrad)"/>
+  <polygon points="50,14 34,26 66,26" fill="#0d5fa0"/>
+  <!-- 帽顶装饰 -->
+  <rect x="48" y="12" width="4" height="4" rx="1" fill="#12affa"/>
+  <!-- 流苏 -->
+  <line x1="65" y1="26" x2="70" y2="32" stroke="#f59e0b" stroke-width="1.5"/>
+  <circle cx="70" cy="33" r="2" fill="#f59e0b"/>
+</svg>

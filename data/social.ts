@@ -18,15 +18,8 @@ type SocialValue = {
 }
 
 const social: Social = {
-  github: 'https://github.com/kuizuo',
-  x: 'https://x.com/ku1zu0',
-  juejin: 'https://juejin.cn/user/1565318510545901',
-  wx: 'https://img.kuizuo.me/wechat.png',
-  // qq: 'https://img.kuizuo.me/qq.png',
-  // zhihu: 'https://www.zhihu.com/people/kuizuo',
-  // cloudmusic: 'https://music.163.com/#/user/home?id=1333010742',
+  github: 'https://github.com/a605204746',
   email: 'mailto:719371164@qq.com',
-  discord: 'https://discord.gg/M8cVcjDxkz',
 }
 
 const socialSet: Record<keyof Social | 'rss', SocialValue> = {
@@ -85,7 +78,6 @@ const socialSet: Record<keyof Social | 'rss', SocialValue> = {
     color: '#C20C0C',
   },
   rss: {
-    href: '/blog/rss.xml',
     title: 'RSS',
     icon: 'ri:rss-line',
     color: '#FFA501',

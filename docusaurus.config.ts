@@ -11,7 +11,7 @@ const config: Config = {
   title: '深度先生',
   url: 'https://kuizuo.me',
   baseUrl: '/',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logo.svg',
   organizationName: 'kuizuo',
   projectName: 'blog',
   customFields: {
@@ -41,8 +41,8 @@ const config: Config = {
     navbar: {
       logo: {
         alt: '深度先生',
-        src: 'img/logo.webp',
-        srcDark: 'img/logo.webp',
+        src: 'img/logo.svg',
+        srcDark: 'img/logo.svg',
       },
       hideOnScroll: true,
       items: [
@@ -51,7 +51,7 @@ const config: Config = {
           label: 'Java',
           position: 'left',
           items: [
-            { label: 'Java基础', to: 'docs/java' },
+            { label: 'Java基础', to: 'docs/java/jdk-setup' },
             { label: 'JVM', to: 'docs/jvm' },
           ],
         },
@@ -59,13 +59,13 @@ const config: Config = {
           label: 'Spring',
           position: 'left',
           items: [
-            { label: 'Spring框架', to: 'docs/spring' },
+            { label: 'Spring', to: 'docs/spring' },
             { label: 'SpringBoot', to: 'docs/springboot' },
             { label: 'SpringCloud', to: 'docs/springcloud' },
             { label: 'Spring Alibaba', to: 'docs/spring-alibaba' },
           ],
         },
-        { label: 'AI技术', position: 'left', to: 'docs/ai' },
+        { label: 'AI相关', position: 'left', to: 'docs/ai' },
         {
           label: '中间件',
           position: 'left',
@@ -76,10 +76,9 @@ const config: Config = {
             { label: 'RocketMQ', to: 'docs/rocketmq' },
           ],
         },
-        { label: '项目', position: 'left', to: 'project' },
+        { label: '实战项目', position: 'left', to: 'project' },
         { label: '友链', position: 'left', to: 'friends' },
         { label: '关于', position: 'left', to: 'about' },
-        { label: '主题魔改', position: 'left', to: 'docs/docusaurus-guides' },
         // {
         //   type: 'localeDropdown',
         //   position: 'right',
@@ -100,29 +99,14 @@ const config: Config = {
           items: [
             { label: '关于我', to: '/about' },
             { label: 'GitHub', href: social.github.href },
-            { label: 'X', href: social.x.href },
-            { label: '掘金', href: social.juejin.href },
-            { label: 'Discord', href: social.discord.href },
-          ],
-        },
-        {
-          title: '网站',
-          items: [
-            { label: 'js反混淆', to: 'https://js-deobfuscator.vercel.app' },
-            { label: 'cyberChef', to: 'https://gchq.github.io/CyberChef' },
+            { label: '邮箱', href: social.email.href },
           ],
         },
         {
           title: '更多',
           items: [
-            { label: '友链', position: 'right', to: 'friends' },
-            {
-              html: `
-                <a href="https://docusaurus.io" target="_blank" rel="noreferrer noopener">
-                  <img src="/img/buildwith.png" alt="build with docusaurus" width="120" height="50"/>
-                </a>
-                `,
-            },
+            { label: '友链', to: 'friends' },
+            { label: '项目', to: 'project' },
           ],
         },
       ],

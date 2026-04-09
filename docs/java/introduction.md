@@ -7,8 +7,4 @@ keywords: ['java', 'java基础']
 displayed_sidebar: javaSidebar
 ---
 
-```mdx-code-block
-import DocCardList from '@theme/DocCardList';
-
-<DocCardList />
-```
+欢迎来到 Java 基础知识库，这里涵盖 JDK 环境配置、JVM 原理等核心内容。
